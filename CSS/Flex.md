@@ -1,10 +1,10 @@
-# Flex에 관한 내용정리
+# Flex에 관한 내용정리  😎
 
-## **Flex 란 ???**<br>
+## **Flex 란 ??? 🤔**<br>
 &nbsp;**Flex**는 웹페이지의 레이아웃을 잡을 때 사용하는 CSS 속성이며 **flex box, flexible box**라고도 부른다.<br>&nbsp;**Flex**는 **레이아웃** 배치기능에 중점을 맞추어 고안되었기 때문에 기존 속성들 보다 훨씬 더 수월하게<br>&nbsp;**퍼블리싱**이 가능하다. &nbsp; flexbox는 부모 요소인 ***div.container***를  ***flex container***라고 부르고,<br>&nbsp;
 자식 요소인 ***div.item***들을 ***Flex Item***이라고 부른다.
 
-## **Flex 속성**
+## **Flex 속성 💻**
 &nbsp; **1) Container**에 적용하는 속성<br>
 &nbsp; **2) Item**에 적용하는 속성<br><br>
 
@@ -30,7 +30,7 @@
 
 - space-around : item들의 둘레에 균일한 간격을 만들어준다.
 
-- space-evenly : item들의 사이와 양 끝에 균일한 간격을 만들어준다.
+- space-evenly : item들의 사이와 양 끝에 균일한 간격을 만들어준다.<br><br>
 
 &nbsp; **align-itms -** 수직축 방향으로 item들을 정렬하는 속성.<br>
 - stretch : item들이 수직축 방향으로 끝까지 늘어난다. (기본값)
@@ -42,10 +42,11 @@
 - center : 가운데 정렬
   
 - baseline : item들을 text-baseline 기준으로 정렬.
+<br><br>
 
 &nbsp; **align-content -** ***flex-wrap***이 설정된 상태에서 item들의 행이 2줄 이상 되었을 경우 ***수직축 방향*** 정렬을 결정하는 속성.<br><br>
 
-## **Flex item에 적용하는 속성들**
+## **Flex item에 적용하는 속성들 🔦**
 &nbsp; **flex-basis -** Flex item의 기본 크기 설정
 (flex의 방향이 ***row - 너비***, ***column - 높이***)<br>
 
