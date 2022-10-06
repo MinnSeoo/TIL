@@ -1,11 +1,11 @@
-# **오늘 하루 공부한 내용정리**
-
 ## **JS란?**
 &nbsp; JS는 JavaScript의 약어이며  이 언어는 Web Page에서 복잡한 기능을 구현할 수 있도록 하는<br> &nbsp; ``객체기반``의 **Scripting** 언어 또는 **Programming** 언어이다.
 
 <br>
 
 ## **JS에서 변수 생성방법**
+  - var : 변수 선언과 동시에 값 할당 가능.
+  
   - const : 변수 생성 후 값 변경 불가능.<br>
 ex) `const.age = 10;`
 
