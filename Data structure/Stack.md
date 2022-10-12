@@ -56,8 +56,6 @@ void init() {
 	}
 }
 
-
-
 int peek() {
 	if (top != NULL)
 		return top->data;
