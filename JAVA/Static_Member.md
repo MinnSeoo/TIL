@@ -7,7 +7,7 @@ package Chap3;
 
 class Circle1 {
 	double radius;		// double 타입의 변수 선언
-	static int numOfCircles = 0;	// static 키워드 사용 -> 전역변수 
+	static int numOfCircles = 0;	// static 키워드 사용 -> 모든 객체에서 메모리 공유가능  (따라서 어디서든 참조가능하다!!)
 	int numCircles = 0;
 	
 	public Circle1(double radius) {
