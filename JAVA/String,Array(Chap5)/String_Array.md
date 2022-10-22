@@ -30,4 +30,40 @@ public class String_Array {
 }
 ```
 
+**Ex_CODE**
+
+```
+package Char_String;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class StrArr_Ex5 {
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String[] name = new String[] {"A", "B", "C", "D", "E"};
+        int[] score = new int[name.length];
+        int i = 0, sum = 0;
+        int max = 0;
+
+        for (i = 0; i < name.length; i++) {
+            System.out.printf("%s 학생의 점수를 입력하세요 : ", name[i]);
+            score[i] = in.nextInt();
+            sum += score[i];
+            if (score[max] < score[i]) {
+                max = i;
+            }
+        }
+        System.out.print("5명 점수 출력 : [");
+        for (i = 0; i < name.length - 1; i++) {
+            System.out.print(score[i] + ", ");
+        }
+        System.out.println("5명 점수 출력 : "+ Arrays.toString(score));
+        System.out.println("합계 : " + sum);
+        System.out.println("평균 : " + (double)sum / name.length);
+        System.out.println("최고 점수 받은 학생 이름 : " + name[max]);
+    }
+}
+```
+
 
