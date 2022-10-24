@@ -4,7 +4,7 @@
 
 ### **Code**
 
-```
+```java
 package Chap5;
 
 public class String_Array {
@@ -32,36 +32,36 @@ public class String_Array {
 
 **Ex_CODE**
 
-```
-package Char_String;
+```java
+package Char_String;    
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class StrArr_Ex5 {
 	public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String[] name = new String[] {"A", "B", "C", "D", "E"};
-        int[] score = new int[name.length];
-        int i = 0, sum = 0;
+        Scanner in = new Scanner(System.in);        // 데이터 입력 변수
+        String[] name = new String[] {"A", "B", "C", "D", "E"}; // 문자열 변수 선언과 동시에 초기화
+        int[] score = new int[name.length];     // score의 배열 길이 = name배열의 길이
+        int i = 0, sum = 0; 
         int max = 0;
 
-        for (i = 0; i < name.length; i++) {
-            System.out.printf("%s 학생의 점수를 입력하세요 : ", name[i]);
-            score[i] = in.nextInt();
-            sum += score[i];
-            if (score[max] < score[i]) {
-                max = i;
+        for (i = 0; i < name.length; i++) {     // i가 name배열의 길이보다 작을동안
+            System.out.printf("%s 학생의 점수를 입력하세요 : ", name[i]);       
+            score[i] = in.nextInt();         // 점수 입력 받음 (name배열에 값 저장)
+            sum += score[i];                 // sum에 score[i]번째 값 더함
+            if (score[max] < score[i]) {     // score[i]번째 원소값이 max보다 작을경우
+                max = i;    // max에 i값 대입
             }
         }
         System.out.print("5명 점수 출력 : [");
         for (i = 0; i < name.length - 1; i++) {
             System.out.print(score[i] + ", ");
         }
-        System.out.println("5명 점수 출력 : "+ Arrays.toString(score));
-        System.out.println("합계 : " + sum);
-        System.out.println("평균 : " + (double)sum / name.length);
-        System.out.println("최고 점수 받은 학생 이름 : " + name[max]);
+        System.out.println("5명 점수 출력 : "+ Arrays.toString(score));     //toString - 문자열 반환
+        System.out.println("합계 : " + sum);        // 합계출력
+        System.out.println("평균 : " + (double)sum / name.length);  // 평균출력
+        System.out.println("최고 점수 받은 학생 이름 : " + name[max]);      // 최고점학생 출력
     }
 }
 ```
