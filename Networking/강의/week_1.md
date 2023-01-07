@@ -87,7 +87,9 @@
 ---
 <br>
 
-&nbsp; L4 Switch -
+&nbsp; L4 Switch - L4 스위치는 로드밸런싱(서버 부하 분산)을 처리하는 장비이다.
+
+&nbsp; Segmantation - 각각의 데이터들을 분할하는 역할을 한다.
 
 
 
