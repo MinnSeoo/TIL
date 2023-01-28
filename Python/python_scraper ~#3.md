@@ -6,7 +6,7 @@ return을 하게 되면 함수 종료됨
 
 String 변수 사용시 앞에 **f** 키워드가 붙고   **{변수} 즉  중괄호 안에 변수명을 적어준다!** 
 
-Make juice
+### **Make juice**
 
 ```python
 def make_juice(fruit):
@@ -31,6 +31,22 @@ print(perfect_juice)
 
 ```python
 age = int(input("How old are you"))
+```
+
+## **list**
+```python
+Days_of_Week = ["mon", "tue", "wen", "thur", "fri"]
+
+print(Days_of_Week)  # list의 내용이 출력됨
+
+print(Days_of_Week.count("wen"))  # list에서 수요일이 몇번 나왔는지 셈
+"""
+Days_of_Week.clear()    # 해당 list의 값을 초기화 한다. (지운다)
+print(Days_of_Week)
+"""
+
+print(Days_of_Week.append("sat")) # append는 내가 원하는 값을 list에 추가할 수 있음.
+print(Days_of_Week)
 ```
 
 ### random 함수
