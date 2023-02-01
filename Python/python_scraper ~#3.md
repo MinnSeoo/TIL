@@ -89,3 +89,33 @@ print(results)
 
 # 대부분 사람들은 list, 튜플을 사용할때 변수명을 복수로 사용함!!
 ```
+
+## **#5.10 ~ #5.14**
+```python
+# we work remotely, BeautifulSoup에서 원하는 코드찾기
+from requests import get
+from selenium import webdriver  # 파이썬에서 브라우저 시작방법
+from selenium.webdriver.chrome.options import Options
+from bs4 import BeautifulSoup
+#from extractors.wwr import extract_wwr_jobs
+# extractors 폴더에 wwr 파일을 불러온후 extract_jobs 함수를 호출한다.
+
+options = Options()
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+
+browser = webdriver.Chrome(options=options)
+browser.get("https://kr.indeed.com/jobs?q=python")
+soup = BeautifulSoup(browser.page_source, "html.parser")
+
+job_list =soup.find("ul", class_="jobsearch-ResultsList")
+jobs =job_list.find_all('li',recursive = False)
+for job in jobs:
+  zone = job.find("div", class_="mosaic-zone")
+  if zone == None:
+    print("job li")
+  else:
+    print("mosaic li")
+
+# None : 무언가 값이 있어야하지만 없을경우 없다고 나타내주는 데이터 타입 즉 '없음'
+```
