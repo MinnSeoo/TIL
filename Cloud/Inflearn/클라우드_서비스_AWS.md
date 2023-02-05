@@ -36,8 +36,6 @@ aws 홈페이지
 
 서비스를 중지 후 다시 돌리면 ip 주소 변경됨 (즉 접속하는 방법을 재 설정을 해야함)
 
- 
-
 11) 보안 (OTP)
 
 보안 → IAM
@@ -135,3 +133,60 @@ Amazon Glacier 요청
 S3는 기본적으로 Web Server Hosting 기능이 기본적으로 저장되어있음
 
 AWS는 Cloud-Front 서비스를 가지고 있음 (content delivery network)
+
+<br>
+
+
+### Cloud-Front
+
+**1) 수업소개**
+
+Cash - 저장된 결과를 이용해서 응답하는 것 (이런 것을 전담하는 서버 → Cashing Server)
+
+CDN - Content Delivery Network의 약자로 이를 이용하면 전세계 있는 사용자들에게
+
+빠르게 컨텐츠를 배달해 줄 수 있다
+
+---
+
+**3)클라우드 프론트 생성**
+
+1) 사용자가 접속을 cloud-front로 하게되면 cloud-front가 client가 되어 웹서버에 요청 →
+
+2) 웹서버는 자기가 가지고 있던 정보를 cloud-front에게 전송 →
+
+3) cloud-front는 그 정보를 가지고 있다가 사용자에게 응답함
+
+위를 수행하고 나면 웹 서버는 노는상태가 됨, 
+
+(즉 웹 서버는 cloud-front에게 정보를 제공해 주는 **origin**  역할을 함)
+
+---
+
+**4) 캐쉬 설정 1**
+
+1) 웹 브라우저가  → cloud Front에 접속
+
+2) cloud Front는 웹 브라우져가 요청한 파일(패스)를  웹서버에게 다시 요청
+
+3) 웹 브라우저는 자기가 가지고 있는 정보를 응답해 줌 응답할때 헤더값으로
+
+ 캐쉬와 관련된 설정 (캐시 컨트롤 값)을  줌
+
+4) cloud Front는 그 정보를 다시 웹 브라우저에게 응답해줌 
+
+5) 웹 브라우저는 cloude Front에게서 받은 정보 그대로 client에게 돌려줌
+
+6**) 캐쉬 설정 3 (무효화)**
+
+Imvalidations - 캐시 강제 지움 (= 무효화)
+
+무효화할 때 요금이 듬..
+
+**7) 캐쉬 설정 4**
+
+disable cache - 선택하면 웹 브라우져가 더이상 캐시를 사용하지 않음.
+
+8**) CDN**
+
+Cloud Front는 기본적으로 1)Origin Server → 2) Edge Location → 3) Web Browser 구조
