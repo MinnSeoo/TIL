@@ -213,3 +213,31 @@ a[-0]
 >>> a[:1] + 'y' + a[2:]
 'Python'
 ```
+
+### 문자열 포매팅
+
+---
+
+**1. 숫자 바로 대입**
+
+```python
+>>> "I eat %d apples." % 3
+'I eat 3 apples.'
+
+```
+
+**2. 문자열 바로 대입**
+
+문자열 안에 숫자도 가능!!
+
+```python
+>>> "I eat %s apples." % "five"
+'I eat five apples.'
+```
+
+**3. 숫자 값을 나타내는 변수로 대입**
+```
+>>> number = 3
+>>> "I eat %d apples." % number
+'I eat 3 apples.'
+```
