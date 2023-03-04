@@ -2,20 +2,20 @@
 오늘 하루 배운 내용을 바탕으로 정리하고 기록하는 Repository 입니다.<br>
 
 **[Repository]**
-- Android(https://github.com/MinnSeoo/TIL/tree/master/Android)
+- [Android](https://github.com/MinnSeoo/TIL/tree/master/Android)
 
-- Cloud
+- [Cloud](https://github.com/MinnSeoo/TIL/tree/master/Cloud/Inflearn)
 
-- Data Structure
+- [Data Structure](https://github.com/MinnSeoo/TIL/tree/master/Data%20structure)
 
-- FrontEnd
+- [FrontEnd](https://github.com/MinnSeoo/TIL/tree/master/FrontEnd)
 
-- Git
+- [Git](https://github.com/MinnSeoo/TIL/tree/master/Git)
 
-- Java
+- [Java](https://github.com/MinnSeoo/TIL/tree/master/JAVA)
 
-- Networking
+- [Networking](https://github.com/MinnSeoo/TIL/tree/master/Networking)
 
-- Python
+- [Python](https://github.com/MinnSeoo/TIL/tree/master/Python)
 
-- Learning
+- [Learning](https://github.com/MinnSeoo/TIL/tree/master/learning)
