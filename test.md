@@ -1,1 +1,0 @@
-git 연동 되는지 test 하는 file
