@@ -2,9 +2,23 @@
 
 `npm init` - package.json을 만드는 명령어, 보통은 새로운 프로젝트나 패키지를 만들 때 사용된다.
 
-package.json - 설치된 모듈들을 정리해주는 메모장 같은 역할을 한다. (관리를 깔끔하게 하기 위해 사용된다.)
+<br>
 
-package-lock.json -
+**[package.json]** 
+
+- 설치된 모듈들을 정리해주는 메모장 같은 역할을 한다.
+- 현재 프로젝트에 대한 정보를 저장하는 곳 이다. (주로 관리를 깔끔하게 하기 위해 사용된다.)
+- 프로젝트의 root 디렉토리에 저장하며 애플리케이션의 종속성 및 기타 정보를 저장한다.
+- 파일 내의 각 정보는 기본적으로 key-value 형태로 저장된다.
+
+<br>
+
+**[package-lock.json]**
+
+- package.json의 정보가 부족하기 때문에 package-lock.json에 더 정확하게 표시되어 있다.
+- node_moudles의 구조나 package.json이 수정 및 생성될 때 당시 의존성에 대한 정확하고 구체적인 정보를 품고 자동으로 생성된다.
+
+<br>
 
 `npm install figlet` - figlet이라는 모듈을 설치하겠다.
 
